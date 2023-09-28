@@ -1,0 +1,79 @@
+.card {
+  width: 390px;
+  height: 300px;
+  border-radius: 4px;
+  background: #0C090A;
+  display: flex;
+  gap: 5px;
+  padding: .4em;
+}
+
+.card a {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background:#0C090A ;
+  border: 2px solid #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card a:hover {
+  flex: 4;
+}
+
+.card a span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #f3f3f3;
+  letter-spacing: .1em;
+}
+
+.card a:hover span {
+  transform: rotate(0);
+}
+
+
+
+/*scrolling projects */
+.red {
+  background-color: #f43f5e;
+}
+
+.blue {
+  background-color: #3b82f6;
+}
+
+.green {
+  background-color: #22c55e;
+}
+
+.scroll-snap-card {
+  height: 400px;
+  width: 550px;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.scroll-snap-card .slide {
+  background-image: url('resource/Screenshot 2023-09-27 203153.png');
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-snap-card .slide img {
+  background-image: none;
+}
